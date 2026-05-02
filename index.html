@@ -25,6 +25,21 @@
     <a href="#">Resources</a>
     <a href="#">Contact</a>
 </nav>
+ </nav> 
+    <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+<script>
+const quotes = [
+    "Small progress is still progress.",
+    "Study now, win later.",
+    "Discipline beats motivation.",
+    "There is nothing you can't do if u put your mind to it."
+];
+
+function newQuote() {
+    const random = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quoteText").innerText = quotes[random];
+}
+</script>    
 
 <section>
     <h2>Welcome to StudyHub</h2>
