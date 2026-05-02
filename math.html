@@ -134,5 +134,23 @@
   <footer>
     <p>&copy; 2026 Study Hub</p>
   </footer>
+  <script>
+    // Attach event listeners to all buttons
+    document.querySelectorAll("button[data-target]").forEach(button => {
+      button.addEventListener("click", () => {
+        const targetId = button.getAttribute("data-target");
+        const solution = document.getElementById(targetId);
+
+        // Toggle show/hide
+        if (solution.style.display === "block") {
+          solution.style.display = "none";
+          button.textContent = "Show Solution";
+        } else {
+          solution.style.display = "block";
+          button.textContent = "Hide Solution";
+        }
+      });
+    });
+  </script>
 </body>
 </html>
